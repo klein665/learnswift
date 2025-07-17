@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "#344 波雅汉库克丨一根解千愁丨横版壁纸_3_媲美beauty_来自小红书网页版.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

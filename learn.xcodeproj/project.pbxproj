@@ -6,6 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2B27F4642E1E40E000BCBB71 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 2B27F4632E1E40E000BCBB71 /* OHHTTPStubs */; };
+		2B27F4662E1E40E000BCBB71 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2B27F4652E1E40E000BCBB71 /* OHHTTPStubsSwift */; };
+		2BD5A8D62E1BCE8800715EDD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2BD5A8D52E1BCE8800715EDD /* SnapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BD5A8ED2E1BD56B00715EDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2BD5A8BA2E1BBE9200715EDD /* learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,16 +55,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD5A8D62E1BCE8800715EDD /* SnapKit in Frameworks */,
+				2B27F4662E1E40E000BCBB71 /* OHHTTPStubsSwift in Frameworks */,
+				2B27F4642E1E40E000BCBB71 /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B27F4612E1E40C800BCBB71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BD5A8B12E1BBE9200715EDD = {
 			isa = PBXGroup;
 			children = (
 				2BD5A8BC2E1BBE9200715EDD /* learn */,
+				2B27F4612E1E40C800BCBB71 /* Frameworks */,
 				2BD5A8BB2E1BBE9200715EDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +98,7 @@
 				2BD5A8B62E1BBE9200715EDD /* Sources */,
 				2BD5A8B72E1BBE9200715EDD /* Frameworks */,
 				2BD5A8B82E1BBE9200715EDD /* Resources */,
+				2BD5A8ED2E1BD56B00715EDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -78,6 +109,9 @@
 			);
 			name = learn;
 			packageProductDependencies = (
+				2BD5A8D52E1BCE8800715EDD /* SnapKit */,
+				2B27F4632E1E40E000BCBB71 /* OHHTTPStubs */,
+				2B27F4652E1E40E000BCBB71 /* OHHTTPStubsSwift */,
 			);
 			productName = learn;
 			productReference = 2BD5A8BA2E1BBE9200715EDD /* learn.app */;
@@ -107,6 +141,10 @@
 			);
 			mainGroup = 2BD5A8B12E1BBE9200715EDD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2BD5A8D42E1BCE8800715EDD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2B27F4622E1E40E000BCBB71 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2BD5A8BB2E1BBE9200715EDD /* Products */;
 			projectDirPath = "";
@@ -333,6 +371,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B27F4622E1E40E000BCBB71 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+		2BD5A8D42E1BCE8800715EDD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B27F4632E1E40E000BCBB71 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B27F4622E1E40E000BCBB71 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		2B27F4652E1E40E000BCBB71 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B27F4622E1E40E000BCBB71 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+		2BD5A8D52E1BCE8800715EDD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BD5A8D42E1BCE8800715EDD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2BD5A8B22E1BBE9200715EDD /* Project object */;
 }
