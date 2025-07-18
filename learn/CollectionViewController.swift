@@ -73,6 +73,10 @@ class CollectionViewController : UIViewController , UICollectionViewDataSource ,
         }
         return p
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detail = DetailVC()
+        navigationController?.pushViewController(detail, animated: true)
+    }
 }
 extension CollectionViewController{
     func loadData()

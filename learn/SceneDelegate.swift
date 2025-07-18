@@ -23,7 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let rootViewController = CollectionViewController()
         rootViewController.view.backgroundColor = .systemBackground
         rootViewController.title = "Home"
-        window?.rootViewController = rootViewController
+        let nav = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
 
